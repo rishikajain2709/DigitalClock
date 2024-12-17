@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    #center
+    {
+        background-color:palevioletred;
+        border:1px solid black;
+        height:30vh;
+        width:30vw;
+        border-radius:20px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        box-shadow: 2px 2px 4px black;
+
+    }
+    h1{
+        color:white;
+        font-size:4rem;
+        font-weight:bold;
+        text-shadow: 2px 2px 4px black;
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="center">
+            
+        </div>
+    </div>
+</body>
+<script>
+  
+  var center= document.querySelector('#center')
+  setInterval(function(){
+    const date=new Date()
+const ans=date.toLocaleTimeString();
+    center.innerHTML=`<h1>${ans}</h1>`;
+  },1000)
+</script>
+</html>
